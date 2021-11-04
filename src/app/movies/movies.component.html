@@ -1,7 +1,16 @@
 <div class="movies-list">
   <div class="movies-title-top" >Explore your next</div>
   <div class="movies-title-bottom" >Movies and tv shows</div>
-  <div class="movie-list-container">0
-    <app-movie-details *ngFor="let movieEl of movies|async" [movie]="movieEl"></app-movie-details>
+  <div *ngIf="movies$ | async as movies; else loadingOrError" class="movie-list-container">
+    <app-movie-details *ngFor="let movieEl of movies" [movie]="movieEl"></app-movie-details>
   </div>
+  <ng-template #loadingOrError>
+    <div *ngIf="getErrorObservable$ | async; else loading" class="movie-error-or-loading">
+      Error loading the list of movies. Please try again later.
+    </div>
+    <ng-template #loading class="movie-error-or-loading">
+      Loading Movies ...
+    </ng-template>
+  </ng-template>
+
 </div>

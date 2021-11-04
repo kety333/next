@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NextFooterComponent } from './components/next-footer/next-footer.component';
 import { NextHeaderComponent } from './components/next-header/next-header.component';
 import { SearchComponent } from './components/search/search.component';
+import { TxtoverflowPipe } from './pipe/txtoverflow.pipe';
+import { HighlightPipe } from './pipe/highlight.pipe';
 
 
 
@@ -10,11 +12,14 @@ import { SearchComponent } from './components/search/search.component';
     declarations: [
         NextFooterComponent,
         NextHeaderComponent,
-        SearchComponent
+        SearchComponent,
+        TxtoverflowPipe,
+        HighlightPipe
     ],
   exports: [
     NextHeaderComponent,
-    NextFooterComponent
+    NextFooterComponent,
+    TxtoverflowPipe
   ],
     imports: [
         CommonModule
