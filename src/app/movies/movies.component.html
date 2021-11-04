@@ -1,0 +1,7 @@
+<div class="movies-list">
+  <div class="movies-title-top" >Explore your next</div>
+  <div class="movies-title-bottom" >Movies and tv shows</div>
+  <div class="movie-list-container">0
+    <app-movie-details *ngFor="let movieEl of movies|async" [movie]="movieEl"></app-movie-details>
+  </div>
+</div>

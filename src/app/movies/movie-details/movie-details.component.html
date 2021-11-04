@@ -1,0 +1,8 @@
+<div class="movie-details">
+  <div class="movie-image">
+    <img src="{{movie.image}}" >
+  </div>
+  <div class="movie-title">{{!!movie?movie.title:''}}({{!!movie?movie.released:''}})</div>
+  <app-movie-rating class="movie-rating" rating="{{!!movie&&movie.rating.length>0?movie.rating:'N/A'}}"></app-movie-rating>
+</div>
+

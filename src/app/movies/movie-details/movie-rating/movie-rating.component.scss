@@ -1,0 +1,21 @@
+.movie-rating{
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 21px;
+  .rating-start{
+    margin-bottom: 3px;
+    margin-right: 5px;
+  }
+  .movie-rating-text {
+    width: 40px;
+    height: 28px;
+    text-align: left;
+    font: normal normal normal 25px/31px Arial;
+    letter-spacing: -0.5px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+
+
+}
