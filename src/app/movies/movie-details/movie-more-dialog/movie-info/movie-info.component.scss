@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 800px) {
   .movie-info {
-    width: 295px;
+    width: 100%;
 
     .movie-title {
       text-align: left;
@@ -40,10 +40,12 @@
       letter-spacing: 0px;
       color: #000000;
       text-transform: uppercase;
+      max-width: 250px;
     }
 
     .movie-summary {
       text-align: left;
+      max-width: 250px;
       font: normal normal normal 16px/17px Georgia;
       letter-spacing: -0.32px;
       color: #000000;

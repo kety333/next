@@ -1,6 +1,6 @@
 <div class="movie-info container ">
-  <div class="col movie-title row">{{movieName}}</div>
-  <div class="movie-time row">{{runtime}}</div>
-  <app-movie-rating [rating]="rating"  [showFrom]="true" class="row"></app-movie-rating>
-  <div class="movie-summary row"  [innerHTML]="synopsis"></div>
+  <div class="col movie-title">{{movieName}}</div>
+  <div class="movie-time">{{runtime}}</div>
+  <app-movie-rating [rating]="rating"  [showFrom]="true"></app-movie-rating>
+  <div class="movie-summary"  [innerHTML]="synopsis"></div>
 </div>

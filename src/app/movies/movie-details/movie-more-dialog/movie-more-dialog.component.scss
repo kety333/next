@@ -2,42 +2,39 @@
   margin-top: 25px;
   margin-left: 125px;
   background: #FFFFFF;
-  list-style: none;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-flex;
 
-  .movie-image img {
-    width: 398px;
-    height: 591px;
+  .movie-image {
+    img {
+      width: 398px;
+      height: 591px;
+    }
   }
-  .movie-info-and-button button img{
-      margin-right: 60px;
-      padding-bottom: 10px;
+
+  .movie-info-and-button button img {
+    margin-right: 60px;
+    padding-bottom: 10px;
   }
-  .movie-info-and-button{
+
+  .movie-info-and-button {
     margin-left: 143px;
   }
-
 }
 
 @media screen and (max-width: 800px) {
   .movie-more-dialog {
     margin-top: 18px;
     margin-left: 19px;
+    display: block;
 
-    .movie-image img {
-      width: 256px;
-      height: 380px;
+    .movie-image {
+      img {
+        width: 256px;
+        height: 380px;
+      }
     }
 
-    .movie-info-and-button{
+    .movie-info-and-button {
       margin-left: 1px;
     }
   }
