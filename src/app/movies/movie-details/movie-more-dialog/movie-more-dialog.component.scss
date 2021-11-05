@@ -26,3 +26,21 @@
   }
 
 }
+
+@media screen and (max-width: 800px) {
+  .movie-more-dialog {
+    margin-top: 18px;
+    margin-left: 19px;
+
+    .movie-image img {
+      width: 256px;
+      height: 380px;
+    }
+
+    .movie-info-and-button{
+      margin-left: 1px;
+    }
+  }
+
+
+}
