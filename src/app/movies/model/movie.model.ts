@@ -13,6 +13,7 @@ export class Movie {
   public unogsdate: string;
   public imdbid: string;
   public download: string;
+  public summary?:string;
 
   constructor(id: string, title: string, image: string, synopsis: string, rating: string,
               type: string, released: string, runtime: string, largeimage: string, unogsdate: string,

@@ -1,0 +1,28 @@
+.movie-more-dialog {
+  margin-top: 25px;
+  margin-left: 125px;
+  background: #FFFFFF;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  .movie-image img {
+    width: 398px;
+    height: 591px;
+  }
+  .movie-info-and-button button img{
+      margin-right: 60px;
+      padding-bottom: 10px;
+  }
+  .movie-info-and-button{
+    margin-left: 143px;
+  }
+
+}

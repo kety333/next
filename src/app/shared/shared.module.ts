@@ -7,14 +7,14 @@ import { TxtoverflowPipe } from './pipe/txtoverflow.pipe';
 import { HighlightPipe } from './pipe/highlight.pipe';
 
 
-
 @NgModule({
     declarations: [
         NextFooterComponent,
         NextHeaderComponent,
         SearchComponent,
         TxtoverflowPipe,
-        HighlightPipe
+        HighlightPipe,
+
     ],
   exports: [
     NextHeaderComponent,

@@ -1,0 +1,21 @@
+<div class="movie-more-dialog container">
+  <div class="movie-image col">
+    <img src="{{movieInfo.movieImg}}">
+  </div>
+
+  <div class="movie-info-and-button col">
+    <app-movie-info class="row"
+                    [movieName]="movieInfo.movieName"
+                    [rating]="movieInfo.rating"
+                    [runtime]="movieInfo.runtime"
+                    [summary]="movieInfo.summary"></app-movie-info>
+    <div class="row align-items-end">
+      <button mat-button mat-dialog-close class="btn-primary-next">
+        <img src="assets/images/arrow.svg" class="svg-more-arrow"/>
+        <span class="btn-text">Back to list</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+

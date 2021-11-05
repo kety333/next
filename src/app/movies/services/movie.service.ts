@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Movie} from "../model/movie.model";
 import {Observable} from "rxjs/";
-
+import { map} from 'rxjs/operators';
 import {HttpClient} from '@angular/common/http';
 import { Subject } from 'rxjs/internal/Subject';
 import {catchError} from "rxjs/operators";
@@ -18,6 +18,14 @@ export class MovieService {
   constructor(private http: HttpClient) {
     // @ts-ignore
     this.moviesObservable$ = this.http.get<Movie[]>(this.SERVER_URL).pipe(
+      map(movies => {
+        return movies.map(movie => {
+          return {
+            ...movie,
+            summary: movie.synopsis.indexOf("<br>") > 0 ? movie.synopsis.slice(0, movie.synopsis.indexOf("<br>")) : movie.synopsis
+          };
+        });
+      }),
       catchError((error) => {
         // it's important that we log an error here.
         // Otherwise you won't see an error in the console.

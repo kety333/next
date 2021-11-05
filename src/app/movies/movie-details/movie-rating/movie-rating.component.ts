@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class MovieRatingComponent implements OnInit {
 
   @Input() rating: string | undefined;
+  @Input() showFrom: boolean | undefined ;
 
   constructor() { }
 

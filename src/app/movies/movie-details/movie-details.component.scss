@@ -1,13 +1,16 @@
-.movie-details{
+.movie-details {
   width: 260px;
   margin-left: 15px;
-  .movie-image{
-    img{
+
+  .movie-image {
+    img {
       width: 260px;
       height: 385px;
     }
+
     margin-bottom: 20px;
   }
+
   .movie-title {
     width: 251px;
     height: 66px;
@@ -17,6 +20,14 @@
     color: #000000;
     text-transform: capitalize;
     opacity: 1;
+  }
+
+  .svg-more-arrow {
+    margin-left: 115px;
+    margin-bottom: 7px;
+  }
+  .btn-primary-next{
+    margin-bottom: 94px;
   }
 }
 

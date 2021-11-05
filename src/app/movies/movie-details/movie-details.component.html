@@ -6,6 +6,9 @@
   </div>
   <app-movie-rating class="movie-rating"
                     rating="{{!!movie&&movie.rating.length>0?movie.rating:'N/A'}}"></app-movie-rating>
-  <button type="button" class="btn btn-primary-next"><i class="fa fa-home"></i>Primary</button>
+  <div type="button" class="btn-primary-next" (click)="onReadMode(movie)">
+    <span class="btn-text"> Read More</span>
+    <img src="assets/images/arrow-more.svg"  class="svg-more-arrow"/>
+  </div>
 </div>
 

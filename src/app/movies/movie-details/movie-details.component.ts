@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Movie} from "../model/movie.model";
+import {MatDialog} from "@angular/material/dialog";
+import {MovieMoreDialogComponent} from "./movie-more-dialog/movie-more-dialog.component";
 
 @Component({
   selector: 'app-movie-details',
@@ -10,10 +12,27 @@ export class MovieDetailsComponent implements OnInit {
   @Input()
   movie!: Movie;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+
+  onReadMode(movie: Movie) :void{
+    let movieObj:Movie= movie;
+    const dialogRef = this.dialog.open(MovieMoreDialogComponent,{
+      width:'1360px',
+      height:'690px',
+      data:{movieName: movie.title, movieImg: movie.image, rating: movie.rating, runtime:movie.runtime, summary:movie.summary}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
 
   ngOnInit(): void {
   }
+
+
+
+
 
 }

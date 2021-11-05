@@ -1,0 +1,29 @@
+.movie-info{
+  width: 546px;
+  .movie-summary{
+    text-align: left;
+    font: normal normal normal 30px/31px Georgia;
+    letter-spacing: -0.6px;
+    color: #000000;
+    text-transform: lowercase;
+    height: 325px;
+  }
+  .movie-title{
+    text-align: left;
+    font: normal normal bold 45px/31px Arial;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  .movie-time{
+    text-align: left;
+    margin-top: 10px;
+    font: normal normal normal 25px/31px Arial;
+    letter-spacing: -0.5px;
+    color: #000000;
+    text-transform: lowercase;
+    opacity: 1;
+  }
+}
+
