@@ -17,7 +17,8 @@ import { HighlightPipe } from './pipe/highlight.pipe';
   exports: [
     NextHeaderComponent,
     NextFooterComponent,
-    TxtoverflowPipe
+    TxtoverflowPipe,
+    HighlightPipe
   ],
     imports: [
         CommonModule

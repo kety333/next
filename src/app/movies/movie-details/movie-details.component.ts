@@ -11,28 +11,35 @@ import {MovieMoreDialogComponent} from "./movie-more-dialog/movie-more-dialog.co
 export class MovieDetailsComponent implements OnInit {
   @Input()
   movie!: Movie;
+  @Input()
+  searchText: string = '';
+  movieLabel: string = '';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+  }
 
-  onReadMode(movie: Movie) :void{
-    let movieObj:Movie= movie;
-    const dialogRef = this.dialog.open(MovieMoreDialogComponent,{
-      width:'1360px',
-      height:'690px',
-      data:{movieName: movie.title, movieImg: movie.image, rating: movie.rating, runtime:movie.time, synopsis:movie.synopsis}
+  onReadMode(movie: Movie): void {
+    let movieObj: Movie = movie;
+    const dialogRef = this.dialog.open(MovieMoreDialogComponent, {
+      width: '1360px',
+      height: '690px',
+      data: {
+        movieName: movie.title,
+        movieImg: movie.image,
+        rating: movie.rating,
+        runtime: movie.time,
+        synopsis: movie.synopsis
+      }
     });
-
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
 
-
   ngOnInit(): void {
+    const title: string = !!this.movie.title ? this.movie.title : '';
+    const released: string = !!this.movie.released ? ' (' + this.movie.released + ')' : '';
+    this.movieLabel = title + released;
   }
-
-
-
-
 
 }

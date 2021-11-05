@@ -5,7 +5,9 @@
     <input type="search" class="search-input" [(ngModel)]="searchText" placeholder="Search movie" >
   </div>
   <div *ngIf="movies$ | async as movies; else loadingOrError" class="movie-list-container">
-    <app-movie-details *ngFor="let movieEl of movies|filter:searchText" [movie]="movieEl"></app-movie-details>
+    <app-movie-details *ngFor="let movieEl of movies|filter:searchText" [movie]="movieEl"
+                       [searchText]="searchText">
+    </app-movie-details>
   </div>
   <ng-template #loadingOrError>
     <div *ngIf="getErrorObservable$ | async; else loading" class="movie-error-or-loading">

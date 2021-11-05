@@ -12,8 +12,7 @@ export class FilterPipe implements PipeTransform {
     }
     const resultArray = [];
     for (const movie of value) {
-      if (movie.title.toLowerCase().indexOf(searchString.toLowerCase()) >= 0 ||
-        movie.synopsis.toLowerCase().indexOf(searchString.toLowerCase()) >= 0) {
+      if (movie.title.toLowerCase().indexOf(searchString.toLowerCase()) >= 0 ){
         resultArray.push(movie);
       }
     }

@@ -21,7 +21,7 @@ export class HighlightPipe implements PipeTransform {
       return value;
     }
 
-    const replacedValue = value.replace(re, "<mark>" + match[0] + "</mark>")
+    const replacedValue = value.replace(re, "<b>" + match[0] + "</b>")
     return this.sanitizer.bypassSecurityTrustHtml(replacedValue)
   }
 
