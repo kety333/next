@@ -19,7 +19,7 @@ export class MovieDetailsComponent implements OnInit {
     const dialogRef = this.dialog.open(MovieMoreDialogComponent,{
       width:'1360px',
       height:'690px',
-      data:{movieName: movie.title, movieImg: movie.image, rating: movie.rating, runtime:movie.runtime, summary:movie.summary}
+      data:{movieName: movie.title, movieImg: movie.image, rating: movie.rating, runtime:movie.time, synopsis:movie.synopsis}
     });
 
     dialogRef.afterClosed().subscribe(result => {

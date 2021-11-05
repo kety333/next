@@ -13,6 +13,7 @@ export class MoviesComponent implements OnInit {
 
   public movies$: Observable<Movie[]> | undefined;
   public getErrorObservable$ :Subject<boolean>| undefined;
+  public searchText:string='';
   constructor(private movieService:MovieService) { }
 
   ngOnInit(): void {

@@ -4,5 +4,5 @@ export interface DialogData {
   movieImg: string;
   rating: string;
   runtime:string;
-  summary:string;
+  synopsis:string;
 }

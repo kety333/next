@@ -22,13 +22,11 @@ export class MovieService {
         return movies.map(movie => {
           return {
             ...movie,
-            summary: movie.synopsis.indexOf("<br>") > 0 ? movie.synopsis.slice(0, movie.synopsis.indexOf("<br>")) : movie.synopsis
+            time: movie.runtime.replace("h", "h ").replace("m","min")
           };
         });
       }),
       catchError((error) => {
-        // it's important that we log an error here.
-        // Otherwise you won't see an error in the console.
         console.error('error loading the list of movies', error);
         this.loadingError$.next(true);
         return of();

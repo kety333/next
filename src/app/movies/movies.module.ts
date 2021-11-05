@@ -9,6 +9,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { MovieMoreDialogComponent } from './movie-details/movie-more-dialog/movie-more-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { MovieInfoComponent } from './movie-details/movie-more-dialog/movie-info/movie-info.component';
+import { FilterPipe } from './pipe/filter.pipe';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -18,14 +20,16 @@ import { MovieInfoComponent } from './movie-details/movie-more-dialog/movie-info
     MovieDetailsComponent,
     MovieRatingComponent,
     MovieMoreDialogComponent,
-    MovieInfoComponent
+    MovieInfoComponent,
+    FilterPipe
   ],
   imports: [
-    CommonModule ,
+    CommonModule,
     MoviesRoutingModule,
     SharedModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: []
 })

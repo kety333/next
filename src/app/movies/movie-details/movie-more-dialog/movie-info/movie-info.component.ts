@@ -10,7 +10,7 @@ export class MovieInfoComponent implements OnInit {
   @Input() movieName: string | undefined;
   @Input() runtime: string | undefined
   @Input() rating: string | undefined;
-  @Input() summary: string | undefined
+  @Input() synopsis: string | undefined
 
   constructor() { }
 

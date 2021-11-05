@@ -2,5 +2,5 @@
   <div class="col movie-title row">{{movieName}}</div>
   <div class="movie-time row">{{runtime}}</div>
   <app-movie-rating [rating]="rating"  [showFrom]="true" class="row"></app-movie-rating>
-  <div class="movie-summary row">{{summary}}</div>
+  <div class="movie-summary row"  [innerHTML]="synopsis"></div>
 </div>

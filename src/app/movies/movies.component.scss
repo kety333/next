@@ -29,7 +29,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    border: 1px solid silver;
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -48,6 +47,19 @@
     color: #a13131;
     text-transform: uppercase;
   }
+  .search-inbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .search-input{
+      width: 260px;
+      height: 42px;
+      border: 1px solid #000000;
+      border-radius: 100px;
+      padding-left: 20px;
+    }
+  }
+
 
 }
 
