@@ -4,6 +4,8 @@ import { NextFooterComponent } from './components/next-footer/next-footer.compon
 import { NextHeaderComponent } from './components/next-header/next-header.component';
 import { TxtoverflowPipe } from './pipe/txtoverflow.pipe';
 import { HighlightPipe } from './pipe/highlight.pipe';
+import { SearchComponent } from './components/search/search.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -12,16 +14,19 @@ import { HighlightPipe } from './pipe/highlight.pipe';
         NextHeaderComponent,
         TxtoverflowPipe,
         HighlightPipe,
+        SearchComponent,
 
     ],
   exports: [
     NextHeaderComponent,
     NextFooterComponent,
     TxtoverflowPipe,
-    HighlightPipe
+    HighlightPipe,
+    SearchComponent
   ],
     imports: [
-        CommonModule
+        CommonModule,
+        FormsModule
     ]
 })
 export class SharedModule { }

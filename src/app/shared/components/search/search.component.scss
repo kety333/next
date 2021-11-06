@@ -1,0 +1,12 @@
+.search-inbox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  .search-input{
+    width: 260px;
+    height: 42px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding-left: 20px;
+  }
+}

@@ -1,9 +1,8 @@
 <div class="movies-list">
-  <div class="movies-title-top" >Explore your next</div>
-  <div class="movies-title-bottom" >Movies and tv shows</div>
-  <div class="search-inbox">
-    <input type="search" class="search-input" [(ngModel)]="searchText" placeholder="Search movie" >
-  </div>
+  <div class="movies-title-top">Explore your next</div>
+  <div class="movies-title-bottom">Movies and tv shows</div>
+  <app-search [searchText]="searchText" [placeholder]="'Search movie'"
+              (searchTextChange)="onSearchedChanged($event)"></app-search>
   <div *ngIf="movies$ | async as movies; else loadingOrError" class="movie-list-container">
     <app-movie-details *ngFor="let movieEl of movies|filter:searchText" [movie]="movieEl"
                        [searchText]="searchText">
@@ -17,5 +16,4 @@
       Loading Movies ...
     </ng-template>
   </ng-template>
-
 </div>

@@ -21,4 +21,8 @@ export class MoviesComponent implements OnInit {
     this.getErrorObservable$ = this.movieService.getErrorObservable();
   }
 
+  onSearchedChanged(searchString:string){
+      this.searchText = searchString;
+  }
+
 }
