@@ -4,17 +4,18 @@
   </div>
 
   <div class="movie-info-and-button">
-    <app-movie-info class="row"
-                    [movieName]="movieInfo.movieName"
-                    [rating]="movieInfo.rating"
-                    [runtime]="movieInfo.runtime"
-                    [synopsis]="movieInfo.synopsis"></app-movie-info>
-    <div class="row align-items-end">
-      <button mat-button mat-dialog-close class="btn-primary-next">
-        <img src="assets/images/arrow.svg" class="svg-more-arrow"/>
-        <span class="btn-text">Back to list</span>
-      </button>
-    </div>
+    <app-movie-info
+      [movieName]="movieInfo.movieName"
+      [rating]="movieInfo.rating"
+      [runtime]="movieInfo.runtime"
+      [synopsis]="movieInfo.synopsis">
+
+    </app-movie-info>
+
+    <button mat-button mat-dialog-close class="btn-primary-next">
+      <img src="assets/images/arrow.svg" class="svg-more-arrow"/>
+      <span class="btn-text">Back to list</span>
+    </button>
   </div>
 </div>
 

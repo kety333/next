@@ -1,27 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.btn-primary-next{
-  width: 260px;
-  height: 42px;
-  border: 1px solid #000000;
-  border-radius: 100px;
-  background: transparent;
+html, body {
+  height: 100%;
 }
-.btn-text{
-  font-family: Graphik Regular;
-  font-size: 18px;
-  color: #000000;
-  line-height: 42px;
-  margin-left: 15px;
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-.mat-dialog-container{
+
+
+.mat-dialog-container {
   background-color: #FFFFFF;
 }
+
 .cdk-overlay-dark-backdrop {
   background: #000000C4 0% 0% no-repeat padding-box;
   opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  div#cdk-overlay-10.cdk-overlay-pane {
+    width: 294px;
+    height: 680px;
+  }
+
+  element.style {
+    transform: none;
+  }
+
+  #mat-dialog-0,
+  mat-dialog-container {
+    padding: 0px;
+  }
 }

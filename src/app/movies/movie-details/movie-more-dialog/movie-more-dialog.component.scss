@@ -1,6 +1,6 @@
 .movie-more-dialog {
-  margin-top: 25px;
-  margin-left: 125px;
+  padding-top: 25px;
+  padding-left: 125px;
   background: #FFFFFF;
   display: inline-flex;
 
@@ -19,23 +19,39 @@
   .movie-info-and-button {
     margin-left: 143px;
   }
+
+  .btn-primary-next{
+    width: 260px;
+    height: 42px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    background: transparent;
+  }
+  .btn-text{
+    font-family: Graphik Regular;
+    font-size: 18px;
+    color: #000000;
+    line-height: 42px;
+    margin-left: 15px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .movie-more-dialog {
-    margin-top: 18px;
-    margin-left: 19px;
+    padding-top: 18px;
+    padding-left: 19px;
     display: block;
 
     .movie-image {
       img {
         width: 256px;
-        height: 380px;
+        height: 350px;
       }
+      padding-bottom: 3px;
     }
 
     .movie-info-and-button {
-      margin-left: 1px;
+      margin-left: 0px;
     }
   }
 
