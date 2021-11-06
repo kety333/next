@@ -50,9 +50,19 @@
       letter-spacing: -0.32px;
       color: #000000;
       text-transform: lowercase;
-      margin-bottom: 23px;
       height: 70px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .movie-time {
+      width: 166px;
+      height: 22px;
+      text-align: left;
+      font: normal normal normal 20px/31px Arial;
+      letter-spacing: -0.4px;
+      color: #000000;
+      text-transform: lowercase;
     }
   }
-
 }

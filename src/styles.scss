@@ -20,17 +20,19 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  div#cdk-overlay-10.cdk-overlay-pane {
+  div.cdk-overlay-pane {
     width: 294px;
     height: 680px;
+  }
+  .cdk-overlay-pane{
+    .mat-dialog-container,
+    mat-dialog-container {
+      padding: 0px;
+    }
   }
 
   element.style {
     transform: none;
   }
 
-  #mat-dialog-0,
-  mat-dialog-container {
-    padding: 0px;
-  }
 }
