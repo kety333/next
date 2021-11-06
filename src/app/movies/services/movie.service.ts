@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import {Movie} from "../model/movie.model";
-import {Observable} from "rxjs/";
+import {Observable, of,Subject} from "rxjs/";
 import { map} from 'rxjs/operators';
 import {HttpClient} from '@angular/common/http';
-import { Subject } from 'rxjs/internal/Subject';
 import {catchError} from "rxjs/operators";
-import { of } from 'rxjs/internal/observable/of';
+
 
 @Injectable({
   providedIn: 'root'
