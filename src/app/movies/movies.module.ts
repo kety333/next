@@ -11,6 +11,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { MovieInfoComponent } from './movie-details/movie-more-dialog/movie-info/movie-info.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import {FormsModule} from "@angular/forms";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 
 
@@ -23,14 +24,15 @@ import {FormsModule} from "@angular/forms";
     MovieInfoComponent,
     FilterPipe
   ],
-  imports: [
-    CommonModule,
-    MoviesRoutingModule,
-    SharedModule,
-    HttpClientModule,
-    MatDialogModule,
-    FormsModule
-  ],
+    imports: [
+        CommonModule,
+        MoviesRoutingModule,
+        SharedModule,
+        HttpClientModule,
+        MatDialogModule,
+        FormsModule,
+        MatTooltipModule
+    ],
   providers: []
 })
 export class MoviesModule { }

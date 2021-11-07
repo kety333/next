@@ -2,12 +2,15 @@
   <div class="movie-image">
     <img src="{{movie.image}}">
   </div>
-  <div class="movie-title" [innerHTML]="movieLabel|txtoverflow:40|highlight:searchText"></div>
+  <div class="movie-title"
+       [innerHTML]="movieLabel|txtoverflow:40|highlight:searchText"
+       [matTooltip]="movieLabel"
+    ></div>
   <app-movie-rating class="movie-rating"
                     rating="{{!!movie&&movie.rating.length>0?movie.rating:'N/A'}}"></app-movie-rating>
-  <div type="button" class="btn-primary-next" (click)="onReadMode(movie)">
+  <button type="button" class="btn-primary-next" (click)="onReadMode(movie)">
     <span class="btn-text"> Read More</span>
     <img src="assets/images/arrow-more.svg"  class="svg-more-arrow"/>
-  </div>
+  </button>
 </div>
 
