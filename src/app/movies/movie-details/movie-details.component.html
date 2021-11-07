@@ -5,12 +5,11 @@
   <div class="movie-title"
        [innerHTML]="movieLabel|txtoverflow:40|highlight:searchText"
        [matTooltip]="movieLabel"
-    ></div>
+  ></div>
   <app-movie-rating class="movie-rating"
                     rating="{{!!movie&&movie.rating.length>0?movie.rating:'N/A'}}"></app-movie-rating>
-  <button type="button" class="btn-primary-next" (click)="onReadMode(movie)">
-    <span class="btn-text"> Read More</span>
-    <img src="assets/images/arrow-more.svg"  class="svg-more-arrow"/>
+  <button type="button" class="btn-primary-next btn-text" (click)="onReadMode(movie)"> Read More
+    <img src="assets/images/arrow-more.svg" class="svg-more-arrow"/>
   </button>
 </div>
 
