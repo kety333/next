@@ -11,7 +11,7 @@ import {catchError} from "rxjs/operators";
 })
 export class MovieService {
   private SERVER_URL:string= "http://localhost:3000/movies";
-  private moviesObservable$:Observable<Movie[]>;
+  private readonly moviesObservable$:Observable<Movie[]>;
   private loadingError$ = new Subject<boolean>();
 
   constructor(private http: HttpClient) {

@@ -19,7 +19,6 @@ export class MovieDetailsComponent implements OnInit {
   }
 
   onReadMode(movie: Movie): void {
-    let movieObj: Movie = movie;
     const dialogRef = this.dialog.open(MovieMoreDialogComponent, {
       width: '1360px',
       height: '690px',
