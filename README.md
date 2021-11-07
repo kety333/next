@@ -12,6 +12,11 @@ to keep them loyal.
   collect from the API.
 - Add a back button to return to the movies list view.
 
+## To  run server 
+Go  to folder  next-sever 
+1. Install npm modules: `npm install`
+2. Start up the server: `npm start`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
